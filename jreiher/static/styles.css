@@ -17,22 +17,29 @@ header nav {
 	height: 4.7em;
 	background: #F7F74C;
 }
-main {
+section {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
 	background: #63DC63;	
 }
-main img {
+section img {
 	border-radius: 50%;
 	max-width: 100%;
 	height: auto;	
 	text-align: center;
 }
-main .name {
+section .name {
 	background: #FF9900;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	height: auto;
 }
-main button {
+section .contact {
+	background: #784279;
+	width: 100%;
+}
+section button {
 	max-width: 18.75em;
 	border-radius: 10%;
 }
@@ -51,4 +58,62 @@ footer {
 	background: black;
 	color: white;
 	margin: 0;
+}
+
+@media screen and (min-width: 550px) {
+	section  {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	header {
+		width: 100%;
+		/*order: 0;*/
+	}
+	div.profile {
+		width: 33.33%;
+		order: -1;
+	}
+	div.name {
+		width: 66.66%;
+		order:0;
+	
+		/* height: 24px; */
+}
+	div.contact {
+		width: 100%;
+		order: 1;
+	}
+	div.tech {
+		width: 100%;
+		order: 2;
+	}
+	div.proj {
+		width: 100%;
+		order: 3;
+	}
+	footer {
+		width: 100%;
+		order: 6;
+	}
+}
+
+@media screen and (min-width: 725px) {
+	article.tech {
+		width: 50%;
+		text-align: left;
+		/*order: 0;*/
+	}
+	article.proj {
+		width: 50%;*/
+		text-align: left;
+		/*order: 1;*/
+	}
+}
+
+@media screen and (min-width: 875px) {
+	body {
+		width: 850px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
