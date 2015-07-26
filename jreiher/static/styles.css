@@ -48,6 +48,7 @@ body {
 	font-size: 24px;
 	color: white;
 	float: right;
+/* 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
 }
 
 .profile, .name {
@@ -82,6 +83,7 @@ body {
 	/* margin-bottom: -100px; */
 	text-align: center;
 	padding-top: 5px; 
+/* 	 text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
 }
 span {
 	font-size: .35em;
@@ -110,26 +112,52 @@ hr.style-eight:after {
 
 .button1, .button2 {
 	width: 100%;
-	height: auto;
-	padding: 15px;
+	/* height: 75px; */
+	padding: 25px;
 	text-align: center;
 	transition: color .5s;
+	background-color: black;
+	opacity: .75;
+/* 	margin-top: 5px; */
+	/* margin-left: 30px; */
 }
 
 .button1 button, .button2 button {
-	width: 275px;
+	width: 225px;
 	height: 40px;
 	margin: auto;
-	border: 1px solid black;
+	border: 1px solid;
 	background-color: #fff;
 	border-radius: 5%;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 1.5em;
+	background-color: #24D00C;
+    background-image: -moz-linear-gradient(center top,#32c33f 0,#2caa37 70%);
+    
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#32c33f),color-stop(0.7,#35B325));
+    
+	border-color: #267934;
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    margin: 0 auto;
+	opacity: none;
+	opacity: 1;
+}
+.button2 button {
+	background-color: #D89322;
+    background-image: -moz-linear-gradient(center top,#32c33f 0,#2caa37 70%);
+    
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#C37F32),color-stop(0.7,#E8B31B));
+    
+	border-color: #0D4C18;
+
 }
 .button1 button:hover, .button2 button:hover {
-	background-color: black;
-	color: white;
+	background-color: green;
+/* 	color:black; */
 }
 
 .info1, .info2 {
