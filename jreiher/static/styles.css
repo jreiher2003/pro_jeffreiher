@@ -33,9 +33,9 @@ body {
 	font-size: 18px;
 }
 .header p {
-	margin-right: 1.5em;
+	margin-right: 1.2em;
 	margin-top: .4em;
-	font-size: 32px;
+	font-size: 24px;
 	float: right;
 }
 
@@ -131,7 +131,7 @@ span {
 	line-height: 1.2em;
 	margin-bottom: -100px;
 	text-align: left;
-	padding-top: 132px;
+	padding-top: 140px;
 	}
 	.button1 {
 		width: 50%;
