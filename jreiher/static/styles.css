@@ -115,9 +115,7 @@ hr.style-eight:after {
 	text-align: center;
 	transition: color .5s;
 }
-/*.button1 {
-	background: #E80CD8;
-}*/
+
 .button1 button, .button2 button {
 	width: 275px;
 	height: 40px;
@@ -133,24 +131,24 @@ hr.style-eight:after {
 	background-color: black;
 	color: white;
 }
-/*.button2 {
-	background: #17B215;
-	text-align: center;
-}*/
-/*.button2 button {
-	width: 275px;
-	height: 40px;
-	margin: auto;
-}*/
-.info1 {
+
+.info1, .info2 {
 	width: 100%;
 	height: 200px;
-	/*background: #C5FFFF;*/
+	background-color: white;
+	border-top: 1px solid;
 }
-.info2 {
-	width: 100%;
-	height: 200px;
-	/*background: #FFDAC5;*/
+
+.info1 h3, .info2 h3 {
+	text-align: center;
+}
+.info1 ul, .info2 ul {
+
+}
+.info1 ul li, .info2 ul li {
+	list-style-type: none;
+	padding-top: 4px;
+	font-size: 1.2em;
 }
 
 
@@ -160,11 +158,7 @@ hr.style-eight:after {
 	/*background: #8E0DFF;*/
 	background: rgb(0, 0, 0);
 }
-/*.exp {
-	width: 100%;
-	height: 100px;
-	background: linear-gradient(#B26538,#2EB2B2);
-}*/
+
 
 
 
