@@ -9,6 +9,6 @@
 *.kpf
 *.db
 venv
-
+node_modules
 # Don't store secret keys in version control
 secret_keys.py
