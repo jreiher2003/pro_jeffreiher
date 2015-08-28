@@ -23,7 +23,12 @@ module.exports = function(grunt) {
           },{
             width: 200,
             suffix: '_small',
-            quality: 30
+          },{
+            width: 32,
+            suffix: '_icon'
+          },{
+            width: 16,
+            suffix: '_icon'
           }]
         },
 
@@ -33,7 +38,7 @@ module.exports = function(grunt) {
         */
         files: [{
           expand: true,
-          src: ['*.{gif,jpg,png,svg}'],
+          src: ['*.{png,svg}'],
           cwd: 'jreiher/static/images/images_src/',
           dest: 'jreiher/static/images/images_build/'
         }]
@@ -62,7 +67,7 @@ module.exports = function(grunt) {
         },
         files: [{
           expand: true,
-          src: ['*.{jpg,webp}'],
+          src: ['*.{png, svg}'],
           cwd: 'jreiher/static/images/images_build',
           dest: 'jreiher/static/images/images_dest'
         }]
