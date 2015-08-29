@@ -5,25 +5,17 @@ api_version: 1
 threadsafe: yes
 
 handlers:
-- url: /.*
+# order matters 
+- url: /*.svg
+  static_files: jreiher/static/images/images_dest/*.svg
+  upload: jreiher/static/images/images_dest/*.svg
+  mime_type: image/svg+xml
+
+- url: /static
+  static_dir: jreiher/static 
+
+- url: .*
   script: jreiher.app
-  # mime_type: image/svg+xml
-
-- url: static/images/images_dest/(.*\.(gif|png|jpg|svg|webp))$
-  static_files: static/images/images_dest/\1
-  upload: static/images/images_dest/.*\.(gif|png|jpg|svg|webp)$
-  # mime_type: image/svg+xml
-  http_headers:
-  	content_type: image/svg+xml
-
-- url: /images_dest
-  static_dir: static/images/images_dest
-
-# - url: /(.*\.svg)
-# static_files: static/images/images_dest/\1
-# upload: static/images/images_dest/(.*\.svg)
-# mime_type: image/svg+xml
-
 
 libraries:
 - name: jinja2

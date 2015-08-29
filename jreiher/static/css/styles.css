@@ -46,15 +46,7 @@ body {
 	width: 100%;
 	height: auto;
 	padding: 15px;
-	/* background: #2EB2B2; */
-   
-	/* background: repeating-linear-gradient(
-	  to right,
-	  #e5e5e5,
-	  #e5e5e5 2px,
-	  #fff 1px,
-	  #fff 25px
-	          ); */
+	
 }
 .profile img {
 	display: block;
@@ -63,10 +55,7 @@ body {
 	border-radius: 50%;
 	border: 2px solid rgba(0,0,0,1);
 }
-/*.name {
-	border: 1px solid black;
-	padding: 5px;
-}*/
+
 .name p {
 	background-color: #fff;
 	border: 1px solid rgba(192,192,192,1);
@@ -97,7 +86,7 @@ hr.style-eight {
 }
 hr.style-eight:before {
     /*content: "§";*/
-    content: url('../images/images_dest/jwblack21-16_icon.png');
+    content: url('../images/images_dest/jwblack21-16_icon.svg');
     display: inline-block;
     position: relative;
     top: -.9em;
