@@ -48,11 +48,11 @@ body {
 	padding: 15px;
 	
 }
-.profile img {
+img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	border-radius: 50%;
+	/*border-radius: 50%;*/
 	border: 2px solid rgba(0,0,0,1);
 }
 
@@ -180,24 +180,7 @@ hr.style-eight:before {
 
 
 @media screen and (min-width: 500px) {
-	.profile {
-		width: 33.33%;
-	}
-	.name {
-		width: 66.66%;
-		/*height: auto;*/
-		/*order: 1;*/
-	}
-	.name p {
-	/*height: auto;
-	font-size: 24px;
-	line-height: 1.2em;*/
-	/* margin-bottom: -100px; */
-	/*text-align: left;*/
-	/* padding-top: 140px; */
-	/*padding-bottom: 140px;
-	padding-left: 15px;*/
-}
+
 	table.table {
 		
 	}
@@ -225,17 +208,15 @@ hr.style-eight:before {
 }
 
 @media screen and (min-width: 850px) {
-	body {
-	/*  background: repeating-linear-gradient(
-	  to right,
-	  #e5e5e5,
-	  #e5e5e5 2px,
-	  #fff 1px,
-	  #fff 25px
-	          );*/
+	.wrapper {
+		width: 70%;
+	}
+	.name {
+		width: 30%;
+	}
 		
-	background-color: rgba(204,204,204,.4);
-    }
+	/*background-color: rgba(204,204,204,.4);
+    }*/
 	.container {
 		width: 850px;
 		margin-left: auto;
