@@ -38,17 +38,21 @@ body {
 	padding: 5px;
 }
 .icon {
-	font-size: 18px;
-	color: white;
+	font-size: 22px;
+	color: rgba(255,255,255,1);
 }
-
+img{
+	float: right;
+	height: 50px;
+	margin-right: 20px;
+}
 .profile, .name {
 	width: 100%;
 	height: auto;
 	padding: 15px;
 	
 }
-img {
+.jcarousel ul li img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -70,10 +74,12 @@ table.table {
 	display: none;
 }
 span {
-	font-size: .35em;
+	font-size: .4em;
 	text-transform: uppercase;
 	margin-left: 1.2em;
 }
+
+
 hr {
 	width: 100%;
 }
@@ -193,6 +199,9 @@ hr.style-eight:before {
 	.button1 button, .button2 button {
 		max-width: 220px;
 	}
+	.header img .jwr {
+		display: none;
+	}
 }
 
 @media screen and (min-width: 750px) {
@@ -211,8 +220,19 @@ hr.style-eight:before {
 	.wrapper {
 		width: 70%;
 	}
-	.name {
+	table.table {
+		display: block;
+		background-color: rgba(255,255,255,1);
+		border-spacing: 0.5rem;
 		width: 30%;
+	/*border: 1px solid;*/
+	}
+	th {
+		font-size: 2em;
+	}
+	tr {
+		font-size: 1em;
+		line-height: 1em;
 	}
 		
 	/*background-color: rgba(204,204,204,.4);
@@ -222,8 +242,5 @@ hr.style-eight:before {
 		margin-left: auto;
 		margin-right: auto;
 	}
-	.profile, .name {
-		/*background: #fff;*/
-	}
-
+	
 }
