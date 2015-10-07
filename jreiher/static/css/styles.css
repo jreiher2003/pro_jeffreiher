@@ -29,8 +29,27 @@ body {
 }
 img.head{
 	float: right;
-	height: 50px;
+	height: 60px;
 	margin-right: 20px;
+}
+ul.dropdown-menu {
+    background-color: black;
+    opacity: .8;
+    border-radius: 5%;
+    margin-top: 1em;
+}
+
+.dropdown-menu>li>a {
+	display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #F5EAEA;
+    white-space: nowrap;
+    background-color: #150101;
+    text-transform: uppercase;
+    font-size: 1em;
 }
 .profile, .name {
 	width: 100%;
@@ -57,9 +76,9 @@ table.table {
 	display: none;
 }
 span {
-	font-size: .4em;
-	text-transform: uppercase;
-	margin-left: 1.2em;
+	/* font-size: .4em; */
+	/* text-transform: uppercase; */
+	/* margin-left: 1.2em; */
 }
 
 
@@ -82,7 +101,10 @@ hr.style-eight:before {
     padding: 0.25em 0.25em;
     background-color: rgba(245,245,245,1);
 }
-
+button:visited {
+	background-color: black;
+	color: inherit;
+}
 .button1, .button2 {
 	width: 100%;
 	padding: 25px;
@@ -227,7 +249,10 @@ figcaption {
 	color: rgba(175,175,175,1);
 }
 
-
+button:link{color:inherit}
+button:active{color:inherit}
+button:visited{color:inherit}
+button:hover{color:inherit}
 
 @media screen and (min-width: 500px) {
 
