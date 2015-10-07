@@ -312,8 +312,8 @@ figcaption {
 		float: right;
 		display: block;
 		height: auto;
-		font-size: 1.75em;
-		margin-right: 30px;	
+		font-size: 1.5em;
+		margin-right: 2em;
 	}
 	.destop {
 		list-style: none;
