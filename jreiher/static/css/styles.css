@@ -27,11 +27,13 @@ body {
 	font-size: 22px;
 	color: rgba(255,255,255,1);
 }
+
 img.head{
 	float: right;
 	height: 60px;
 	margin-right: 20px;
 }
+
 ul.dropdown-menu {
     background-color: black;
     opacity: .8;
@@ -75,11 +77,12 @@ ul.dropdown-menu {
 table.table {
 	display: none;
 }
-span {
-	/* font-size: .4em; */
-	/* text-transform: uppercase; */
-	/* margin-left: 1.2em; */
-}
+
+span.small {
+	font-size: .4em; 
+	text-transform: uppercase; 
+	margin-left: 1.2em; 
+} 
 
 
 hr {
@@ -249,10 +252,9 @@ figcaption {
 	color: rgba(175,175,175,1);
 }
 
-button:link{color:inherit}
-button:active{color:inherit}
-button:visited{color:inherit}
-button:hover{color:inherit}
+.nav-hidden {
+	display: none;
+}
 
 @media screen and (min-width: 500px) {
 
@@ -299,7 +301,9 @@ button:hover{color:inherit}
 		background-color: rgba(255,255,255,1);
 		border-spacing: 0.5rem;
 		width: 30%;
-	/*border: 1px solid;*/
+	}
+	.nav-hidden {
+		display: inline-block;
 	}
 	th {
 		font-size: 2em;
