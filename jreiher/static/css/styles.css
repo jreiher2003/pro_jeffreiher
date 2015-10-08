@@ -172,7 +172,10 @@ hr.style-eight:before {
 	padding-top: 4px;
 	font-size: 1.3em;
 }
-
+.info1 ul li:before, .info2 ul li:before {
+	content: "\27A2";
+	padding-right: 8px;
+}
 
 footer {
 	width: 100%;
