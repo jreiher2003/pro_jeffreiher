@@ -76,6 +76,10 @@
 .jcarousel-control-prev {
     left: 15px;
 }
+.jcarousel-control-prev:hover,
+.jcarousel-control-next:hover {
+    color: rgba(0,255,54,1);
+}
 
 .jcarousel-control-next {
     right: 15px;
