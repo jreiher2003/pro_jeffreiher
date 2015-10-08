@@ -260,6 +260,19 @@ figcaption {
 	display: none;
 }
 
+/* Styles for blog page */
+/* #####################*/
+section {
+	height: 400px;
+	margin: auto auto;
+	/*border: auto;*/
+	/*background-color: white;*/
+}
+section h2 {
+	background-color: white;
+	padding: 40px;
+}
+
 @media screen and (min-width: 500px) {
 
 	table.table {

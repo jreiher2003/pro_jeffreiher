@@ -9,7 +9,7 @@ def index():
 
 @app.route('/blog')
 def blog():
-	return "Hello blog"
+	return render_template('blog.html')
 
 @app.route('/projects')
 def project():
