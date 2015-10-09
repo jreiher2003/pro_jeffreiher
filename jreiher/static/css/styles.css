@@ -260,13 +260,11 @@ figcaption {
 	display: none;
 }
 
-/* Styles for blog page */
-/* #####################*/
+/* Styles for blog page, project page */
+/* ###################################*/
 section {
 	height: 400px;
 	margin: auto auto;
-	/*border: auto;*/
-	/*background-color: white;*/
 }
 section h2 {
 	background-color: white;
