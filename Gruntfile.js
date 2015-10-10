@@ -72,16 +72,17 @@ module.exports = function(grunt) {
           dest: 'jreiher/static/images/images_dest'
         }]
       }
-    }
-
+    },
+  
   });
 
   grunt.loadNpmTasks('grunt-responsive-images');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-mkdir');
-  grunt.loadNpmTasks('grunt-contrib-imagemin')
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
+  
   grunt.registerTask('img', ['clean', 'mkdir','responsive_images']);
-  grunt.registerTask('min', ['imagemin'])
+  grunt.registerTask('min', ['imagemin']);
 
 };
