@@ -94,7 +94,7 @@ hr.style-eight {
     text-align: center;
 }
 hr.style-eight:before {
-    content: url('../images/images_dest/jwblack21-16_icon.svg');
+    content: url('/static/images/images_dest/jwblack21-16_icon.svg');
     display: inline-block;
     position: relative;
     top: -.9em;
@@ -259,6 +259,9 @@ figcaption {
 .nav-hidden {
 	display: none;
 }
+/*.btn-default {
+	background-color: rgba(0,0,0,1);
+}*/
 
 /* Styles for blog page, project page */
 /* ###################################*/

@@ -48,7 +48,7 @@ module.exports = function(grunt) {
     /* Clear out the images directory if it exists */
     clean: {
       dev: {
-        src: ['jreiher/static/images/images_build'],
+        src: ['jreiher/static/images/images_build','jreiher/static/css/build','jreiher/static/js/build']
       },
     },
 
@@ -73,6 +73,43 @@ module.exports = function(grunt) {
         }]
       }
     },
+    concat: {
+        css: {
+          src: ['jreiher/static/css/bootstrap.css', 'jreiher/static/css/jcarousel.responsive.css','jreiher/static/css/styles.css'],
+          dest: 'jreiher/static/css/build/build.css'
+        },
+        js: {
+          src: ['jreiher/static/js/jquery-1.11.3.js','jreiher/static/js/bootstrap.js','jreiher/static/js/jquery.jcarousel.js', 'jreiher/static/js/jcarousel.responsive.js', 'jreiher/static/js/menu.js'],
+          dest: 'jreiher/static/js/build/build.js'
+        }
+    },
+    cssmin: {
+        compress: {
+            files: {
+                'jreiher/static/css/build/build.min.css': ['jreiher/static/css/build/build.css'],
+            }
+        }
+    },
+    uglify: {
+        compress: {
+            files: {
+                'jreiher/static/js/build/build.min.js': ['jreiher/static/js/build/build.js'],
+            }
+        }
+    },
+    watch: {
+        options: {
+            livereload: true,
+        },
+        css: {
+            files: ['jreiher/static/css/bootstrap.css', 'jreiher/static/css/jcarousel.responsive.css','jreiher/static/css/styles.css'],
+            tasks: ['clean', 'concat:css', 'cssmin']
+        },
+        js: {
+            files: ['jreiher/static/js/jquery-1.11.3.js','jreiher/static/js/bootstrap.js','jreiher/static/js/jquery.jcarousel.js', 'jreiher/static/js/jcarousel.responsive.js', 'jreiher/static/js/menu.js'],
+            tasks: ['clean', 'concat:js', 'uglify']
+        }   
+    }
   
   });
 
@@ -81,8 +118,14 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-mkdir');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-watch');
   
   grunt.registerTask('img', ['clean', 'mkdir','responsive_images']);
   grunt.registerTask('min', ['imagemin']);
+  grunt.registerTask('build',['clean', 'concat', 'cssmin', 'uglify']);
+  // grunt.registerTask('ss', ['uglify']);
 
 };
