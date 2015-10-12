@@ -104,9 +104,6 @@ module.exports = function(grunt) {
         }
     },
     watch: {
-        options: {
-            livereload: true,
-        },
         css: {
             files: ['jreiher/static/css/bootstrap.css', 'jreiher/static/css/jcarousel.responsive.css','jreiher/static/css/styles.css'],
             tasks: ['clean:css', 'concat:css', 'cssmin']
