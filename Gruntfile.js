@@ -106,11 +106,13 @@ module.exports = function(grunt) {
     watch: {
         css: {
             files: ['jreiher/static/css/bootstrap.css', 'jreiher/static/css/jcarousel.responsive.css','jreiher/static/css/styles.css'],
-            tasks: ['clean:css', 'concat:css', 'cssmin']
+            tasks: ['clean:css', 'concat:css', 'cssmin'],
+            options : { nospawn : true }
         },
         js: {
             files: ['jreiher/static/js/jquery-1.11.3.js','jreiher/static/js/bootstrap.js','jreiher/static/js/jquery.jcarousel.js', 'jreiher/static/js/jcarousel.responsive.js', 'jreiher/static/js/menu.js'],
-            tasks: ['clean:js', 'concat:js', 'uglify']
+            tasks: ['clean:js', 'concat:js', 'uglify'],
+            options : { nospawn : true }
         }   
     }
   
