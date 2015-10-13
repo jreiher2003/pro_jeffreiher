@@ -11,6 +11,6 @@
 venv
 node_modules
 package.json
-Grunfile.js
+Gruntfile.js
 # Don't store secret keys in version control
 secret_keys.py
