@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>{% block title %}{% endblock %}</title>
+	<!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  -->
 	<meta charset="UTF-8">
 	<meta name='copyright' content="DSAC LLC">
 	<meta name='language' content="ES">
@@ -11,7 +12,7 @@
 	<meta name='keywords' content="{% block keywords %}{% endblock %}"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" type="image/svg+xml" href="#">
+	<link rel="shortcut icon" type="image/svg+xml" href="/static/images/images_dest/jwblack21-16_icon.ico">
 	<link href='http://fonts.googleapis.com/css?family=Work+Sans' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
@@ -40,7 +41,13 @@
 			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 			<span class='icon'><i class="fa fa-bars fa-2x"></i></span>
 			</button>
-			<a href="/home"><img class="head" src="/static/images/images_dest/jwr_black_crop-200_small.svg" height="100"></a>
+
+			<a href="/home">
+				<picture>
+					<source class="head" srcset="/static/images/images_dest/jwr_black_crop-200_small.svg" height='100'> 
+					<img class="head" src="/static/images/images_dest/jwr_black_crop-200_small.png" height="100" alt="JWR black logo">
+				</picture>
+			</a>
 
 			<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
 				<li><a href="/home"><i class="fa fa-home fa-lg social"></i>&nbsp;&nbsp; Home</a></li>
@@ -62,13 +69,18 @@
 		<footer>
 			<ul class="social">
 				<li style="padding-left:0px;"><a href="https://github.com/jreiher2003" target="_blank" class="git">GitHub</a></li>
-				<li><a href="https://www.linkedin.com/nhome/" target="_blank" class="linkedin">LinkedIn</a></li>
+				<li><a href="https://www.linkedin.com/pub/jeff-reiher/48/9b7/132" target="_blank" class="linkedin">LinkedIn</a></li>
 				<li><a href="https://twitter.com/BigJeffDogg" target="_blank" class="twitter">Twitter</a></li>
 				<li><a href="https://www.facebook.com/jeff.reiher" target="_blank" class="facebook">Facebook</a></li>
 			</ul>	
 			<div class="bottom-footer">
 				<figure>
-				<a href="/home"><img class="foot" src="static/images/images_dest/jeffreihercom_crop-200_small.svg" alt="logo of jeffreiher.com"></a>
+				<a href="/home">
+					<picture>
+						<source class="foot" srcset="static/images/images_dest/jeffreihercom_crop-200_small.svg">
+						<img class="foot" src="static/images/images_dest/jeffreihercom_crop-200_small.png" alt="logo of jeffreiher.com">
+					</picture>
+				</a>
 				<figcaption>&#169;&nbsp;Copyright 2015 DSAC LLC.&nbsp; All Rights Resevered</figcaption>
 				</figure>
 			</div>
