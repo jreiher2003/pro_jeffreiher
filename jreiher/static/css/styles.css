@@ -124,8 +124,8 @@ hr.style-eight:before {
     text-align: center;
     outline: none;
     text-decoration: none;
-    transition: background-color 0.2s ease-out,
-    			color 0.2 ease-out;
+    transition: background-color 0.1s ease-out,
+    			color 0.1s ease-out;
 
 	font-size: 1.2em;
 	text-transform: uppercase;
@@ -143,16 +143,16 @@ hr.style-eight:before {
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	background-color: rgba(0,255,54,.9); /* fallback */
     border-color: rgba(0,255,54,.9); /* fallback */
-	transition: background-color 0.3s ease-in,
-				color 0.3s ease-in;
+	transition: background-color 0.1s ease-in,
+				color 0.1s ease-in;
 }
  .button2 a:hover, .button2 a.active {
  	color: rgba(255,255,255,1);
  	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	background-color: rgba(255,200,0,.9); /* fallback */
     border-color: rgba(255,200,0,.9); /* fallback */
-	transition: background-color 0.3s ease-in,
-				color 0.3s ease-in;
+	transition: background-color 0.1s ease-in,
+				color 0.1s ease-in;
  }
 .info1, .info2 {
 	width: 100%;
