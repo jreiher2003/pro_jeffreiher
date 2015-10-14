@@ -1,0 +1,23 @@
+{
+  "short_name": "Jeff Reiher",
+  "name": "The Jeff Reiher Awesome App",
+  "icons": [
+    {
+      "src": "/static/images/images_dest/jwr_black_crop-16_icon.png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "/static/images/images_dest/jwr_black_crop-32_icon.png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "/static/images/images_dest/jwr_black_crop-144_icon.png",
+      "sizes": "144x144"
+    },
+   
+  ],
+  "theme_color": "#ff0000",
+  "background_color": "#ff0000",
+  "start_url": "index.html",
+  "display": "standalone"
+}
