@@ -97,6 +97,7 @@ hr.style-eight {
 }
 hr.style-eight:before {
     content: url('/static/images/images_dest/jwblack21-16_icon.svg');
+    content: url('/static/images/images_dest/jwblack21-16_icon.png');
     display: inline-block;
     position: relative;
     top: -.9em;
