@@ -17,6 +17,15 @@ handlers:
 - url: .*
   script: jreiher.app
 
+skip_files:
+- ^(node_modules)
+- ^(.*/)?#.*#$
+- ^(.*/)?.*~$
+- ^(.*/)?.*\.py[co]$
+- ^(.*/)?.*/RCS/.*$
+- ^(.*/)?\..*$
+
+
 libraries:
 - name: jinja2
   version: "2.6"
