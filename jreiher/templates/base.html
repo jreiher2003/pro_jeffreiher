@@ -14,29 +14,19 @@
 	<meta name='copyright' content="DSAC LLC">
 	<meta name='language' content="ES">
 	<meta name="robots" content="index,follow">
-	<link rel="manifest" href="/manifest.json">
+	<!-- <link rel="manifest" href="/manifest.json"> -->
 	<link rel="shortcut icon" type="image/svg+xml" href="/static/images/images_dest/jwblack21-16_icon.ico">
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
-	<!-- <link rel="stylesheet" href="/static/css/build/build.min.css"> -->
-	
-	<link rel="stylesheet" href="/static/css/bootstrap.css">
+	<link rel="stylesheet" href="/static/css/build/build.min.css">
+	<!-- <link rel="stylesheet" href="/static/css/bootstrap.css">
 	<link rel="stylesheet" href="/static/css/jcarousel.responsive.css">
-	<link rel="stylesheet" href="/static/css/styles.css">
-
+	<link rel="stylesheet" href="/static/css/styles.css"> -->
 	<style type="text/css">
-	/*.header {
-		width: 100%;
-		height: auto;
-		background-color: rgba(0, 0, 0, 1);
-		padding: 5px;
-	}*/
 	.icon {
 		font-size: 22px;
 		color: rgba(255,255,255,1);
 	}
-
 	.wrapper {
 		background-color: white;
 		/*max-width: 500px;*/
@@ -45,7 +35,6 @@
 		padding: 0 20px 40px 0;
 		/*margin: auto;*/
 	}
-	
 	.button1 a {
 		color: rgba(0,255,54,1);
 		border: 3px solid rgba(0,255,54,1);
@@ -55,11 +44,8 @@
 		border: 3px solid rgba(255,200,0,1);
 	}
 	</style>
-
 </head>
-
 <body>
-	
 	<div class="container">
 		<div class="header">
 			<a href="/home">
@@ -68,7 +54,6 @@
 					<img class="head" src="/static/images/images_dest/jwr_black_crop-200_small.png" alt="JWR black logo">
 				</picture>
 			</a>
-			
 			<div class="nav-hidden">
 				<ul class="desktop">
 					<li><a href="/home"><i class="fa fa-home fa-lg social"></i>&nbsp;&nbsp; Home</a></li>
@@ -76,14 +61,10 @@
 					<li><a href="/projects"><i class="fa fa-file-code-o fa-lg social"></i>&nbsp;&nbsp; Projects</a></li>
 				</ul>
 			</div>
-			
 			<div class="dropdown">
 			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 			<span class='icon'><i class="fa fa-bars fa-2x"></i></span>
 			</button>
-
-			
-
 			<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
 				<li><a href="/home"><i class="fa fa-home fa-lg social"></i>&nbsp;&nbsp; Home</a></li>
 				<li><a href="/blog"><i class="fa fa-comments-o fa-lg social"></i>&nbsp;&nbsp; Blog</a></li>
@@ -95,12 +76,8 @@
 				<li><a href="https://www.facebook.com/jeff.reiher" target="_blank" ><i class="fa fa-facebook fa-lg social"></i>&nbsp;&nbsp; | &nbsp; Facebook</a></li>
 			</ul>
 			</div>
-
 		</div>
-
 		{% block section %}{% endblock %}
-
-
 		<footer>
 			<ul class="social">
 				<li style="padding-left:0px;"><a href="https://github.com/jreiher2003" target="_blank" class="git">GitHub</a></li>
@@ -120,26 +97,21 @@
 				</figure>
 			</div>
 		</footer>
-
 	</div>
-
 	<!--  // <script type="text/javascript" src="/static/js/jquery-1.11.3.js"></script>
   //    <script type="text/javascript" src="/static/js/bootstrap.js"></script>
 	
 	 // <script type="text/javascript" src="/static/js/jquery.jcarousel.js"></script>
 	 // <script type="text/javascript" src="/static/js/jcarousel.responsive.js"></script>
 	 // <script type="text/javascript" src="/static/js/menu.js"></script> -->
-
 	<script async type"text/javascript" src="/static/js/build/build.min.js"></script>
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
 	  ga('create', 'UA-68828092-1', 'auto');
 	  ga('send', 'pageview');
-
 	</script>
 </body>
 </html>
