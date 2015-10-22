@@ -16,14 +16,45 @@
 	<meta name="robots" content="index,follow">
 	<link rel="manifest" href="/manifest.json">
 	<link rel="shortcut icon" type="image/svg+xml" href="/static/images/images_dest/jwblack21-16_icon.ico">
-	<!-- <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'> -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-	<link rel="stylesheet" href="/static/css/build/build.min.css">
+	<!-- <link rel="stylesheet" href="/static/css/build/build.min.css"> -->
 	
-	<!-- <link rel="stylesheet" href="/static/css/bootstrap.css">
+	<link rel="stylesheet" href="/static/css/bootstrap.css">
 	<link rel="stylesheet" href="/static/css/jcarousel.responsive.css">
-	<link rel="stylesheet" href="/static/css/styles.css"> -->
+	<link rel="stylesheet" href="/static/css/styles.css">
+
+	<style type="text/css">
+	/*.header {
+		width: 100%;
+		height: auto;
+		background-color: rgba(0, 0, 0, 1);
+		padding: 5px;
+	}*/
+	.icon {
+		font-size: 22px;
+		color: rgba(255,255,255,1);
+	}
+
+	.wrapper {
+		background-color: white;
+		/*max-width: 500px;*/
+		max-width: 100%;
+		min-width: 350px;
+		padding: 0 20px 40px 0;
+		/*margin: auto;*/
+	}
+	
+	.button1 a {
+		color: rgba(0,255,54,1);
+		border: 3px solid rgba(0,255,54,1);
+	}
+	.button2 a {
+		color: rgba(255,200,0,1);
+		border: 3px solid rgba(255,200,0,1);
+	}
+	</style>
 
 </head>
 
@@ -31,7 +62,13 @@
 	
 	<div class="container">
 		<div class="header">
-
+			<a href="/home">
+				<picture>
+					<source class="head" srcset="/static/images/images_dest/jwr_black_crop-200_small.svg"> 
+					<img class="head" src="/static/images/images_dest/jwr_black_crop-200_small.png" alt="JWR black logo">
+				</picture>
+			</a>
+			
 			<div class="nav-hidden">
 				<ul class="desktop">
 					<li><a href="/home"><i class="fa fa-home fa-lg social"></i>&nbsp;&nbsp; Home</a></li>
@@ -45,12 +82,7 @@
 			<span class='icon'><i class="fa fa-bars fa-2x"></i></span>
 			</button>
 
-			<a href="/home">
-				<picture>
-					<source class="head" srcset="/static/images/images_dest/jwr_black_crop-200_small.svg" height='100'> 
-					<img class="head" src="/static/images/images_dest/jwr_black_crop-200_small.png" height="100" alt="JWR black logo">
-				</picture>
-			</a>
+			
 
 			<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
 				<li><a href="/home"><i class="fa fa-home fa-lg social"></i>&nbsp;&nbsp; Home</a></li>
@@ -98,7 +130,7 @@
 	 // <script type="text/javascript" src="/static/js/jcarousel.responsive.js"></script>
 	 // <script type="text/javascript" src="/static/js/menu.js"></script> -->
 
-	<script type"text/javascript" src="/static/js/build/build.min.js"></script>
+	<script async type"text/javascript" src="/static/js/build/build.min.js"></script>
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
