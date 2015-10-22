@@ -40,9 +40,9 @@ body {
 }
 
 img.head{
-	float: right;
-	height: 60px;
-	margin-right: 20px;
+	 float: right; 
+	 height: 60px; 
+	 margin-right: 1.25em; 
 }
 
 ul.dropdown-menu {
@@ -325,9 +325,9 @@ section h2 {
 	}
 	.header {
 		width: 100%;
-		height: 75px;
+		height: 50px; 
 	}
-	 	.icon {
+	 .icon {
 		display: none;
  	}
 	.wrapper {
@@ -340,14 +340,15 @@ section h2 {
 		width: 30%;
 	}
 	.nav-hidden {
-		float: right;
+		float: left;
+		text-align: center;
 		display: block;
 		height: auto;
 		font-size: 1.5em;
-		margin-right: 2em;
 	}
-	.destop {
+	.desktop {
 		list-style: none;
+		margin-right: 1.25em;
 	}
 	.desktop li {
 		display: inline;
@@ -356,14 +357,17 @@ section h2 {
 		display: inline-block;
 		padding: 10px;
 		color: rgba(175,175,175,1);
-		text-decoration: none;
 	}
 	.desktop a:hover {
 		color: rgba(255,255,255,1);
+		text-decoration: none;
 	}
 	img.head {
-		 position: fixed;
+		 /* position: fixed; */
+		 float: left;
 		 top: 5px;
+		 height: 40px;
+		 margin-left: 1.25em;
 	}
 	
 	th {
