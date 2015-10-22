@@ -22,26 +22,81 @@
 	<link rel="stylesheet" href="/static/css/jcarousel.responsive.css">
 	<link rel="stylesheet" href="/static/css/styles.css"> -->
 	<style type="text/css">
-	.icon {
-		font-size: 22px;
-		color: rgba(255,255,255,1);
+	body {
+		font-family: 'robotomedium';
+		/* font-family: 'Roboto', sans-serif; */
+		font-size: 1.2em;
+		line-height: 1.2em;
+	}
+	.container {
+		display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+		display: -ms-flexbox;  /* TWEENER - IE 10 */
+		display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+		display: flex;
+		-webkit-flex-wrap: wrap;         /* NEW, Spec - Firefox, Chrome, Opera */
+		flex-wrap: wrap;
+		padding: 0;
+		margin: 0;
+		border: 1px solid black;
+		background: repeating-linear-gradient(to right,#e5e5e5,#e5e5e5 2px,#fff 1px,#fff 25px);
+		background: -webkit-repeating-linear-gradient(right, #e5e5e5,#e5e5e5 2px,#fff 1px,#fff 25px);
 	}
 	.wrapper {
-		background-color: white;
-		/*max-width: 500px;*/
-		max-width: 100%;
-		min-width: 350px;
-		padding: 0 20px 40px 0;
-		/*margin: auto;*/
+	    background-color: #fff;
+	    max-width: 100%;
+	    min-width: 350px;
+	    padding: 0 20px 40px 0;
 	}
-	.button1 a {
-		color: rgba(0,255,54,1);
-		border: 3px solid rgba(0,255,54,1);
+	.header {
+		width: 100%;
+		height: auto;
+		background-color: rgba(0,0,0,1);
+		padding: 5px;
 	}
-	.button2 a {
-		color: rgba(255,200,0,1);
-		border: 3px solid rgba(255,200,0,1);
+	img.head{
+		float: right; 
+		height: 60px; 
+		margin-right: 1.25em; 
 	}
+	.button1, .button2 {
+		width: 100%;
+		padding: 25px;
+		text-align: center;
+		background-color: rgba(0,0,0,.8);
+	}
+	@media screen and (min-width: 500px) {
+		.button1 {
+			width: 50%;
+		}
+		.button2 {
+			width: 50%;
+		}
+		.button1 button, .button2 button {
+			max-width: 220px;
+		}
+	@media screen and (min-width: 850px) {
+		.container {
+			width: 850px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.header {
+			width: 100%;
+			height: 50px; 
+		}
+		.icon {
+			display: none;
+		}
+		.wrapper {
+			width: 70%;
+		}
+		img.head {
+		 /* position: fixed; */
+		 float: left;
+		 top: 5px;
+		 height: 40px;
+		 margin-left: 1.25em;
+		}
 	</style>
 </head>
 <body>
