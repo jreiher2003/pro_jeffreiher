@@ -6937,7 +6937,6 @@ button.close {
          url('Roboto-Medium-webfont.svg#robotomedium') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 body {
 	font-family: 'robotomedium';
@@ -6968,13 +6967,11 @@ body {
 	font-size: 22px;
 	color: rgba(255,255,255,1);
 }
-
 img.head{
 	 float: right; 
 	 height: 60px; 
 	 margin-right: 1.25em; 
 }
-
 ul.dropdown-menu {
     background-color: black;
     opacity: .8;
@@ -6982,25 +6979,21 @@ ul.dropdown-menu {
     margin-top: 5px;
     width: 100%;
 }
-
 .dropdown-menu>li>a {
 	display: block;
-    padding: 15px;
+    padding: 24px;
     clear: both;
     font-weight: 400;
-    line-height: 1.42857143;
+    line-height: 1em;
     color: #F5EAEA;
     white-space: nowrap;
     background-color: #150101;
-    /*text-transform: uppercase;*/
     font-size: 1.5em;
-   
 }
 .profile, .name {
 	width: 100%;
 	height: auto;
-	padding: 15px;
-	
+	padding: 15px;	
 }
 .jcarousel ul li img {
 	display: block;
@@ -7008,7 +7001,6 @@ ul.dropdown-menu {
 	margin-right: auto;
 	border: 2px solid rgba(0,0,0,1);
 }
-
 .name p {
 	background-color: #fff;
 	border: 1px solid rgba(192,192,192,1);
@@ -7020,7 +7012,6 @@ ul.dropdown-menu {
 table.table {
 	display: none;
 }
-
 span.small {
 	font-size: .4em; 
 	text-transform: uppercase; 
@@ -7050,24 +7041,20 @@ hr.style-eight:before {
 	width: 100%;
 	padding: 25px;
 	text-align: center;
-	background-color: rgba(0,0,0,.8);
-    
+	background-color: rgba(0,0,0,.8);   
 }
 .button1 a, .button2 a {
-
     display: inline-block;
 	width: 14.0625em;
 	height: 2.5em;
     padding: .625em;
 	margin: auto;
-    
     border-radius: 2%;
     text-align: center;
     outline: none;
     text-decoration: none;
     transition: background-color 0.1s ease-out,
     			color 0.1s ease-out;
-
 	font-size: 1.2em;
 	text-transform: uppercase;
 }
@@ -7101,7 +7088,6 @@ hr.style-eight:before {
 	background-color: rgba(255,255,255,1);
 	border-top: 1px solid;
 }
-
 .info1 h4, .info2 h4 {
 	text-align: center;
 	font-weight: bold;
@@ -7120,18 +7106,15 @@ hr.style-eight:before {
 	content: "\27A2";
 	padding-right: 8px;
 }
-
 footer {
 	width: 100%;
 	height: auto;
 	background-color: rgba(0,0,0,1);
 }
-
 footer ul li: {
 	list-style: none;
 	padding: 0;
 }
-
 ul.social {
 	font-family: FontAwesome;
 	font-size: 1em;
@@ -7140,7 +7123,6 @@ ul.social {
 	padding: 20px 0 20px 0;
 	margin: 10px 0 10px 0;
 	border-bottom: 2px solid rgba(175,175,175,1);
-
 }
 ul.social li {
 	display: inline-block;
@@ -7152,23 +7134,19 @@ ul.social li {
 	font-size: 1.3em;
 	color: rgba(175,175,175,1);
 }
-
 .social li a {
 	position: relative;
 	color: rgba(175,175,175,1);
 	display: block;
 	width: auto;
 	text-decoration: none;
-
 }
 .social li a:hover {
 	color: rgba(255,255,255,1);
 }
-
 .git:before {
 	content: '\f09b';
 	padding-right: 10px;
-
 }
 .linkedin:before {
 	content: '\f0e1';
@@ -7182,7 +7160,6 @@ ul.social li {
 	content: '\f082';
 	padding-right: 10px;
 }
-
 .bottom-footer {
 	width: 100%;
 	text-align: center;
@@ -7192,21 +7169,14 @@ img.foot {
 	margin: 0 auto;
 }
 figure {
-	margin-bottom: 10px;
-	
+	margin-bottom: 10px;	
 }
-
 figcaption {
 	color: rgba(175,175,175,1);
 }
-
 .nav-hidden {
 	display: none;
 }
-/*.btn-default {
-	background-color: rgba(0,0,0,1);
-}*/
-
 /* Styles for blog page, project page */
 /* ###################################*/
 section {
@@ -7219,10 +7189,6 @@ section h2 {
 }
 
 @media screen and (min-width: 500px) {
-
-	table.table {
-		
-	}
 	.button1 {
 		width: 50%;
 	}
@@ -7238,7 +7204,6 @@ section h2 {
 }
 
 @media screen and (min-width: 750px) {
-
 	.info1 {
 		width: 50%;
 	}
@@ -7293,13 +7258,11 @@ section h2 {
 		text-decoration: none;
 	}
 	img.head {
-		 /* position: fixed; */
 		 float: left;
 		 top: 5px;
 		 height: 40px;
 		 margin-left: 1.25em;
 	}
-	
 	th {
 		font-size: 2em;
 	}
@@ -7315,7 +7278,6 @@ section h2 {
 		float: right;
 		margin-right: 20px;
 		border-top: 2px solid rgba(175,175,175,1);
-		
 	}
 	.bottom-footer {
 		width: 50%;
