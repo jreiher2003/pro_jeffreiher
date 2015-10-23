@@ -41,17 +41,20 @@
 		background: repeating-linear-gradient(to right,#e5e5e5,#e5e5e5 2px,#fff 1px,#fff 25px);
 		background: -webkit-repeating-linear-gradient(right, #e5e5e5,#e5e5e5 2px,#fff 1px,#fff 25px);
 	}
-	.wrapper {
+	/*.wrapper {
 	    background-color: #fff;
 	    max-width: 100%;
 	    min-width: 350px;
 	    padding: 0 20px 40px 0;
-	}
+	}*/
 	.header {
 		width: 100%;
 		height: auto;
 		background-color: rgba(0,0,0,1);
 		padding: 5px;
+	}
+	.nav-hidden {
+		display: none;
 	}
 	img.head{
 		float: right; 
@@ -87,6 +90,9 @@
 		.icon {
 			display: none;
 		}
+		.dropdown {
+			display: none;
+		}
 		.wrapper {
 			width: 70%;
 		}
@@ -96,6 +102,20 @@
 		 top: 5px;
 		 height: 40px;
 		 margin-left: 1.25em;
+		}
+		.nav-hidden {
+		    float: left;
+		    text-align: center;
+		    display: block;
+		    height: auto;
+		    font-size: 1.5em;
+		}
+		.desktop {
+			list-style: none;
+			margin-right: 1.25em;
+		}
+		.desktop li {
+			display: inline;
 		}
 	</style>
 </head>
