@@ -264,9 +264,6 @@ section h2 {
 	.button1, .button2 {
 		width: 50%;
 	}
-	.button1 a, .button2 a {
-		/*width: 200px;*/
-	}
 	.header img .jwr {
 		display: none;
 	}
@@ -276,15 +273,15 @@ section h2 {
 	.info1,.info2 {
 		width: 50%;
 	}
-	.button1, .button2 {
+	/*.button1, .button2 {
 		width: 50%;
-	}
+	}*/
 	
 }
 
 @media screen and (min-width: 850px) {
 	.container {
-		width: 1000px;
+		width: 850px;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -302,7 +299,7 @@ section h2 {
 		display: block;
 		background-color: rgba(255,255,255,1);
 		border-spacing: 0.5rem;
-		width: 28%;
+		width: 27%;
 	}
 	.nav-hidden {
 		float: left;
@@ -340,9 +337,9 @@ section h2 {
 		font-size: 1em;
 		line-height: 1em;
 	}
-	.button1, .button2 {
+	/*.button1, .button2 {
 		width: 50%;
-	}
+	}*/
 	footer {
 		padding: 40px 0 20px 0;
 	}
