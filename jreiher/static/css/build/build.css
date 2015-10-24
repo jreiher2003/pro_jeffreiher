@@ -6799,11 +6799,9 @@ button.close {
 
 .wrapper {
     background-color: white;
-    /*max-width: 500px;*/
     max-width: 100%;
     min-width: 350px;
     padding: 0 20px 40px 0;
-    /*margin: auto;*/
 }
 
 .jcarousel-wrapper {
@@ -6930,22 +6928,24 @@ button.close {
 
 @font-face {
     font-family: 'robotomedium';
-    src: url('Roboto-Medium-webfont.eot');
-    src: url('Roboto-Medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Roboto-Medium-webfont.woff') format('woff'),
-         url('Roboto-Medium-webfont.ttf') format('truetype'),
-         url('Roboto-Medium-webfont.svg#robotomedium') format('svg');
+    src: url('/static/fonts/Roboto-Medium-webfont.eot');
+    src: url('/static/fonts/Roboto-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/static/fonts/Roboto-Medium-webfont.woff') format('woff'),
+         url('/static/fonts/Roboto-Medium-webfont.ttf') format('truetype'),
+         url('/static/fonts/Roboto-Medium-webfont.svg#robotomedium') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 body {
 	font-family: 'robotomedium';
-	/* font-family: 'Roboto', sans-serif; */
 	font-size: 1.2em;
 	line-height: 1.2em;
 }
 .container {
 	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -o-flex;
   	display: -ms-flexbox;  /* TWEENER - IE 10 */
  	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
  	display: flex;
@@ -7045,9 +7045,9 @@ hr.style-eight:before {
 }
 .button1 a, .button2 a {
     display: inline-block;
-	width: 14.0625em;
-	height: 2.5em;
-    padding: .625em;
+	width: 200px;
+	/*height: 40px;*/
+    padding: 10px;
 	margin: auto;
     border-radius: 2%;
     text-align: center;
@@ -7055,7 +7055,7 @@ hr.style-eight:before {
     text-decoration: none;
     transition: background-color 0.1s ease-out,
     			color 0.1s ease-out;
-	font-size: 1.2em;
+	font-size: 16px;
 	text-transform: uppercase;
 }
 .button1 a {
@@ -7189,14 +7189,11 @@ section h2 {
 }
 
 @media screen and (min-width: 500px) {
-	.button1 {
+	.button1, .button2 {
 		width: 50%;
 	}
-	.button2 {
-		width: 50%;
-	}
-	.button1 button, .button2 button {
-		max-width: 220px;
+	.button1 a, .button2 a {
+		/*width: 200px;*/
 	}
 	.header img .jwr {
 		display: none;
@@ -7204,17 +7201,18 @@ section h2 {
 }
 
 @media screen and (min-width: 750px) {
-	.info1 {
+	.info1,.info2 {
 		width: 50%;
 	}
-	.info2 {
+	.button1, .button2 {
 		width: 50%;
 	}
+	
 }
 
 @media screen and (min-width: 850px) {
 	.container {
-		width: 850px;
+		width: 1000px;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -7232,7 +7230,7 @@ section h2 {
 		display: block;
 		background-color: rgba(255,255,255,1);
 		border-spacing: 0.5rem;
-		width: 30%;
+		width: 28%;
 	}
 	.nav-hidden {
 		float: left;
@@ -7269,6 +7267,9 @@ section h2 {
 	tr {
 		font-size: 1em;
 		line-height: 1em;
+	}
+	.button1, .button2 {
+		width: 50%;
 	}
 	footer {
 		padding: 40px 0 20px 0;
