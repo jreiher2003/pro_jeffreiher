@@ -117,9 +117,9 @@ hr.style-eight:before {
 }
 .button1 a, .button2 a {
     display: inline-block;
-	width: 14.0625em;
-	height: 2.5em;
-    padding: .625em;
+	width: 200px;
+	/*height: 40px;*/
+    padding: 10px;
 	margin: auto;
     border-radius: 2%;
     text-align: center;
@@ -127,7 +127,7 @@ hr.style-eight:before {
     text-decoration: none;
     transition: background-color 0.1s ease-out,
     			color 0.1s ease-out;
-	font-size: 1.2em;
+	font-size: 16px;
 	text-transform: uppercase;
 }
 .button1 a {
@@ -261,14 +261,11 @@ section h2 {
 }
 
 @media screen and (min-width: 500px) {
-	.button1 {
+	.button1, .button2 {
 		width: 50%;
 	}
-	.button2 {
-		width: 50%;
-	}
-	.button1 button, .button2 button {
-		max-width: 220px;
+	.button1 a, .button2 a {
+		/*width: 200px;*/
 	}
 	.header img .jwr {
 		display: none;
@@ -280,11 +277,9 @@ section h2 {
 		width: 50%;
 	}
 	.button1, .button2 {
-		width: 100%;
+		width: 50%;
 	}
-	.button1 a, .button2 a {
-		max-width: 350px;
-	}
+	
 }
 
 @media screen and (min-width: 850px) {
@@ -307,7 +302,7 @@ section h2 {
 		display: block;
 		background-color: rgba(255,255,255,1);
 		border-spacing: 0.5rem;
-		width: 30%;
+		width: 28%;
 	}
 	.nav-hidden {
 		float: left;
@@ -344,6 +339,9 @@ section h2 {
 	tr {
 		font-size: 1em;
 		line-height: 1em;
+	}
+	.button1, .button2 {
+		width: 50%;
 	}
 	footer {
 		padding: 40px 0 20px 0;
