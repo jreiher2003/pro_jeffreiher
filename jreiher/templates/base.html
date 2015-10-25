@@ -212,24 +212,32 @@
 		</footer>
 	</div>
 		
-         <script async type="text/javascript">
-        (function() {
-        	var css = document.createElement('link');
-        	css.href = "/static/css/build/build.min.css";
-        	css.rel = 'stylesheet';
-        	css.type = 'text/css';
-        	document.getElementsByTagName('head')[0].appendChild(css);
-        })();
-		</script>
-        <script async type="text/javascript">
-        (function() {
-        	var css = document.createElement('link');
-        	css.href = "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css";
-        	css.rel = 'stylesheet';
-        	css.type = 'text/css';
-        	document.getElementsByTagName('head')[0].appendChild(css);
-        })();
-		</script>
+         
+       <!--  // (function() {
+        // 	var css = document.createElement('link');
+        // 	css.href = "/static/css/build/build.min.css";
+        // 	css.rel = 'stylesheet';
+        // 	css.type = 'text/css';
+        // 	document.getElementsByTagName('head')[0].appendChild(css);
+        // })(); -->
+		
+         <script>
+         var cb = function() {
+         	var l = document.createElement('link'); l.rel = 'stylesheet';
+         	l.href = '/static/css/build/build.min.css';
+         	var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h); };
+         	var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+         	webkitRequestAnimationFrame || msRequestAnimationFrame;
+         	if (raf) raf(cb);
+         	else window.addEventListener('load', cb);
+        </script>
+        <script>
+       // Asynchronously load non-critical css 
+       function loadCSS(e, t, n) { "use strict"; var i = window.document.createElement("link"); var o = t || window.document.getElementsByTagName("script")[0]; i.rel = "stylesheet"; i.href = e; i.media = "only x"; o.parentNode.insertBefore(i, o); setTimeout(function () { i.media = n || "all" }) }
+        // load css file async
+        loadCSS("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+        </script>
+
         <script async type="text/javascript" src="/static/js/build/build.min.js"></script>
         <!-- Google Analytics -->
 		<script>
