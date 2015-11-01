@@ -39,9 +39,9 @@ body {
 	font-size: 22px;
 	color: rgba(255,255,255,1);
 }
-img.head{
+source.head, img.head {
 	 float: right; 
-	 height: 60px; 
+	 height: 35px; 
 	 margin-right: 1.25em; 
 }
 ul.dropdown-menu {

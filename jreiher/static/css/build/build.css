@@ -2994,12 +2994,12 @@ select[multiple].input-lg {
 }
 .btn {
   display: inline-block;
-  padding: 6px 12px;
-  margin-bottom: 0;
-  font-size: 14px;
-  font-weight: normal;
+  /*padding: 6px 12px;*/
+  /*margin-bottom: 0;*/
+  /*font-size: 14px;*/
+  /*font-weight: normal;*/
   line-height: 1.42857143;
-  text-align: center;
+  /*text-align: center;*/
   white-space: nowrap;
   vertical-align: middle;
   -ms-touch-action: manipulation;
@@ -6967,9 +6967,9 @@ body {
 	font-size: 22px;
 	color: rgba(255,255,255,1);
 }
-img.head{
+source.head, img.head {
 	 float: right; 
-	 height: 60px; 
+	 height: 35px; 
 	 margin-right: 1.25em; 
 }
 ul.dropdown-menu {
