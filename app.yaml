@@ -13,6 +13,14 @@ handlers:
   upload: jreiher/static/images/images_dest/*.svg
   mime_type: image/svg+xml
 
+  # - url: /robots.txt   
+  # static_files: jreiher/static/robots.txt
+  # upload: jreiher/static/robots.txt
+
+- url: /sitemap.xml    
+  static_files: jreiher/static/sitemap.xml
+  upload: jreiher/static/sitemap.xml
+
 - url: /static
   static_dir: jreiher/static 
 
