@@ -5,9 +5,20 @@ api_version: 1
 threadsafe: yes
 default_expiration: "60d"
 
+skip_files:
+- ^(node_modules)
+- ^(.*/)?#.*#$
+- ^(.*/)?.*~$
+- ^(.*/)?.*\.py[co]$
+- ^(.*/)?.*/RCS/.*$
+- ^(.*/)?\..*$
 
 handlers:
-# order matters 
+# order matters
+- url: /(robots\.txt|humans\.txt|crossdomain\.xml|sitemap\.xml)
+  static_files: static/\1
+  upload: static/(robots\.txt|humans\.txt|crossdomain\.xml|sitemap\.xml)
+
 - url: /*.svg
   static_files: jreiher/static/images/images_dest/*.svg
   upload: jreiher/static/images/images_dest/*.svg
@@ -19,13 +30,6 @@ handlers:
 - url: .*
   script: jreiher.app
 
-skip_files:
-- ^(node_modules)
-- ^(.*/)?#.*#$
-- ^(.*/)?.*~$
-- ^(.*/)?.*\.py[co]$
-- ^(.*/)?.*/RCS/.*$
-- ^(.*/)?\..*$
 
 
 libraries:
